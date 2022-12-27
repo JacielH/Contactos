@@ -43,7 +43,7 @@ public class MenuActivity extends AppCompatActivity {
         btnConta1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                actualizar("http://192.168.100.53/relay?r1=on");
+                actualizar("http://192.168.100.53/");
             }
         });
         btnCont1.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +78,7 @@ public class MenuActivity extends AppCompatActivity {
         });
     }
     private void actualizar(String url){
-        StringRequest stringRequest= new StringRequest(Request.Method.PUT, url, new Response.Listener<String>() {
+        StringRequest stringRequest= new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(getApplicationContext(), "Operacion realizada", Toast.LENGTH_LONG).show();
