@@ -4,30 +4,22 @@
     <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BIENVENIDO"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_margin="5dp"
-            ></TextView>
 
         <Button
             android:id="@+id/btnConta1"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:drawableLeft="@drawable/img"
+            android:layout_margin="5dp"
             android:text="Encender Contacto 1"
             android:textSize="20sp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:drawableRight="@drawable/img"
             android:text="Apagar Contacto 1"
+            android:drawableRight="@drawable/img"
             android:layout_margin="1dp"
             android:id="@+id/btnCont1"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -35,8 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:drawableLeft="@drawable/img"
             android:text="Encender Contacto 2"
+            android:drawableLeft="@drawable/img"
             android:layout_margin="5dp"
             android:id="@+id/btnConta2"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -44,8 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:drawableRight="@drawable/img"
             android:text="Apagar Contacto 2"
+            android:drawableRight="@drawable/img"
             android:layout_margin="1dp"
             android:id="@+id/btnCont2"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -53,8 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:drawableLeft="@drawable/img"
             android:text="Encender contacto 3"
+            android:drawableLeft="@drawable/img"
             android:layout_margin="5dp"
             android:id="@+id/btnConta3"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -62,8 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:drawableRight="@drawable/img"
             android:text="Apagar Contacto 3"
+            android:drawableRight="@drawable/img"
             android:layout_margin="1dp"
             android:id="@+id/btnCont3"
             style="?attr/materialButtonOutlinedStyle"/>

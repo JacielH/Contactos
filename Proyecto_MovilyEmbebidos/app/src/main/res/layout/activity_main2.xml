@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIENVENIDO"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Que desea hacer?"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            ></TextView>
+
+        <Button
+            android:id="@+id/btnPuerta"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableRight="@drawable/access"
+            android:text="Acceso a Oficina"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/luz"
+            android:text="Control de luces"
+            android:layout_margin="15dp"
+            android:id="@+id/btnLuz"
+            style="?attr/materialButtonOutlinedStyle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/on"
+            android:text="Control de Multi-contactos"
+            android:layout_margin="15dp"
+            android:id="@+id/btnMulticontactos"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+    </LinearLayout>
+</ScrollView>
