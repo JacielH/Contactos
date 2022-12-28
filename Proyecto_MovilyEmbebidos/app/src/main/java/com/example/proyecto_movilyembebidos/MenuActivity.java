@@ -40,41 +40,41 @@ public class MenuActivity extends AppCompatActivity {
         btnConta1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r1=on");
+                Encender("http://192.168.100.53/relay?r1=on");
             }
         });
         btnCont1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r1=off");
+                Apagar("http://192.168.100.53/relay?r1=off");
             }
         });
         btnConta2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r2=on");
+                Encender("http://192.168.100.53/relay?r2=on");
             }
         });
         btnCont2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r2=off");
+                Apagar("http://192.168.100.53/relay?r2=off");
             }
         });
         btnConta3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r3=on");
+                Encender("http://192.168.100.53/relay?r3=on");
             }
         });
         btnCont3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Buscar("http://192.168.100.53/relay?r3=off");
+                Apagar("http://192.168.100.53/relay?r3=off");
             }
         });
     }
-    private void Buscar(String url) {
+    private void Encender(String url) {
         JsonArrayRequest stringArray = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -92,6 +92,29 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getApplicationContext(), "Contacto Encendido", Toast.LENGTH_LONG).show();
+            }
+        });
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringArray);
+    }
+    private void Apagar(String url) {
+        JsonArrayRequest stringArray = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                JSONObject jsonObject = null;
+                for (int i = 0; i <= response.length(); i++) {
+                    try {
+                        jsonObject = response.getJSONObject(i);
+                        jsonObject.getString("relay");
+                    } catch (JSONException e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(), "Contacto Apagado", Toast.LENGTH_LONG).show();
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
