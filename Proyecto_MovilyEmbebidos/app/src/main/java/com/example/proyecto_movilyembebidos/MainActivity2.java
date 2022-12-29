@@ -20,6 +20,15 @@ public class MainActivity2 extends AppCompatActivity {
         btnPuerta=(Button) findViewById(R.id.btnPuerta);
         btnMulticontactos=(Button) findViewById(R.id.btnMulticontactos);
 
+        btnLuz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity2.this,MenuActivity2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         btnMulticontactos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,4 +38,5 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
 }

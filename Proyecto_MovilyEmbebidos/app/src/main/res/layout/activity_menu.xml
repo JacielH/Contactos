@@ -7,7 +7,6 @@
 
         <Button
             android:id="@+id/btnConta1"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/img"
@@ -19,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="Apagar Contacto 1"
-            android:drawableRight="@drawable/img"
+            android:drawableRight="@drawable/apagarluz"
             android:layout_margin="1dp"
             android:id="@+id/btnCont1"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -30,14 +29,13 @@
             android:text="Encender Contacto 2"
             android:drawableLeft="@drawable/img"
             android:layout_margin="5dp"
-            android:id="@+id/btnConta2"
-            style="?attr/materialButtonOutlinedStyle"/>
+            android:id="@+id/btnConta2" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="Apagar Contacto 2"
-            android:drawableRight="@drawable/img"
+            android:drawableRight="@drawable/apagarluz"
             android:layout_margin="1dp"
             android:id="@+id/btnCont2"
             style="?attr/materialButtonOutlinedStyle"/>
@@ -48,16 +46,23 @@
             android:text="Encender contacto 3"
             android:drawableLeft="@drawable/img"
             android:layout_margin="5dp"
-            android:id="@+id/btnConta3"
-            style="?attr/materialButtonOutlinedStyle"/>
+            android:id="@+id/btnConta3" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="Apagar Contacto 3"
-            android:drawableRight="@drawable/img"
+            android:drawableRight="@drawable/apagarluz"
             android:layout_margin="1dp"
             android:id="@+id/btnCont3"
             style="?attr/materialButtonOutlinedStyle"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Regresar"
+            android:layout_margin="5dp"
+            android:id="@+id/btnR"
+            />
     </LinearLayout>
 </ScrollView>

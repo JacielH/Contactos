@@ -3,82 +3,55 @@ package com.example.proyecto_movilyembebidos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.proyecto_movilyembebidos.R.id;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MenuActivity extends AppCompatActivity {
-    Button btnConta1, btnConta2, btnConta3, btnCont1, btnCont2, btnCont3, btnR;
+public class MenuActivity2 extends AppCompatActivity {
+
+    Button btnEncender, btnApagar, btnSalir;
     RequestQueue requestQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_menu2);
 
-        btnConta1=(Button) findViewById(R.id.btnConta1);
-        btnCont1=(Button) findViewById(R.id.btnCont1);
-        btnConta2=(Button) findViewById(R.id.btnConta2);
-        btnCont2=(Button) findViewById(R.id.btnCont2);
-        btnConta3=(Button) findViewById(R.id.btnConta3);
-        btnCont3=(Button) findViewById(R.id.btnCont3);
-        btnR=(Button) findViewById(R.id.btnR);
+        btnEncender=(Button) findViewById(R.id.btnEncender);
+        btnApagar=(Button) findViewById(R.id.btnApagar);
+        btnSalir=(Button) findViewById(R.id.btnSalir);
 
-        btnConta1.setOnClickListener(new View.OnClickListener() {
+        btnEncender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r1=on");
+                //Cambiar IP que les da el programa al correr arduino
+                //Encender("http://192.168.100.53/relay?r1=on");
             }
         });
-        btnCont1.setOnClickListener(new View.OnClickListener() {
+
+        btnApagar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r1=off");
+                //Cambiar IP que les da el programa al correr arduino
+                //Apagar("http://192.168.100.53/relay?r1=off");
             }
         });
-        btnConta2.setOnClickListener(new View.OnClickListener() {
+
+        btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r2=on");
-            }
-        });
-        btnCont2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r2=off");
-            }
-        });
-        btnConta3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r3=on");
-            }
-        });
-        btnCont3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r3=off");
-            }
-        });
-        btnR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this,MainActivity2.class);
+                Intent intent = new Intent(MenuActivity2.this,MainActivity2.class);
                 startActivity(intent);
                 finish();
             }
@@ -101,7 +74,7 @@ public class MenuActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "Contacto Encendido", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Luces Encendidas", Toast.LENGTH_LONG).show();
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -124,7 +97,7 @@ public class MenuActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "Contacto Apagado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Luces Apagadas", Toast.LENGTH_LONG).show();
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);

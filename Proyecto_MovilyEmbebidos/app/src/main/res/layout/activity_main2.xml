@@ -25,10 +25,9 @@
 
         <Button
             android:id="@+id/btnPuerta"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="30dp"
             android:drawableRight="@drawable/access"
             android:text="Acceso a Oficina"
             android:textSize="20sp" />
@@ -39,18 +38,16 @@
             android:textSize="20sp"
             android:drawableLeft="@drawable/luz"
             android:text="Control de luces"
-            android:layout_margin="15dp"
-            android:id="@+id/btnLuz"
-            style="?attr/materialButtonOutlinedStyle"/>
+            android:layout_margin="30dp"
+            android:id="@+id/btnLuz"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:drawableRight="@drawable/on"
             android:text="Control de Multi-contactos"
-            android:layout_margin="15dp"
-            android:id="@+id/btnMulticontactos"
-            style="?attr/materialButtonOutlinedStyle"/>
+            android:layout_margin="30dp"
+            android:id="@+id/btnMulticontactos"/>
 
     </LinearLayout>
 </ScrollView>

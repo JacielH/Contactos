@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEncender"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/encenderluz"
+            android:layout_margin="55dp"
+            android:text="Encender Luces"
+            android:textSize="20sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Apagar Luces"
+            android:drawableRight="@drawable/apagarluz"
+            android:layout_margin="55dp"
+            android:id="@+id/btnApagar"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Salir"
+            android:layout_margin="45dp"
+            android:id="@+id/btnSalir"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+    </LinearLayout>
+</ScrollView>
