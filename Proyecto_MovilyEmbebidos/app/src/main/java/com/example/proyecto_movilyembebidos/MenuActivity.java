@@ -42,37 +42,37 @@ public class MenuActivity extends AppCompatActivity {
         btnConta1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r1=on");
+                Encender("http://192.168.100.39/relay?r1=on");
             }
         });
         btnCont1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r1=off");
+                Apagar("http://192.168.100.39/relay?r1=off");
             }
         });
         btnConta2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r2=on");
+                Encender("http://192.168.100.39/relay?r2=on");
             }
         });
         btnCont2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r2=off");
+                Apagar("http://192.168.100.39/relay?r2=off");
             }
         });
         btnConta3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Encender("http://192.168.100.53/relay?r3=on");
+                Encender("http://192.168.100.39/relay?r3=on");
             }
         });
         btnCont3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Apagar("http://192.168.100.53/relay?r3=off");
+                Apagar("http://192.168.100.39/relay?r3=off");
             }
         });
         btnR.setOnClickListener(new View.OnClickListener() {
