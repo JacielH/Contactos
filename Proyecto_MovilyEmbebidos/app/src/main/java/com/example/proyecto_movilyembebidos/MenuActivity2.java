@@ -36,7 +36,7 @@ public class MenuActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Cambiar IP que les da el programa al correr arduino
-                //Encender("http://192.168.100.53/relay?r1=on");
+                Encender("http://192.168.100.45/relay?do=on");
             }
         });
 
@@ -44,7 +44,7 @@ public class MenuActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Cambiar IP que les da el programa al correr arduino
-                //Apagar("http://192.168.100.53/relay?r1=off");
+                Apagar("http://192.168.100.45/relay?do=off");
             }
         });
 
