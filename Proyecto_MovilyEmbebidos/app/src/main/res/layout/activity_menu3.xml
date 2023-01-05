@@ -22,7 +22,7 @@
             android:text="Cerrar Puerta"
             android:drawableRight="@drawable/cerrar"
             android:layout_margin="55dp"
-            android:id="@+id/btnApagar"/>
+            android:id="@+id/btnCerrar"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:background="@drawable/bordes_redondos"
             android:text="Salir"
             android:layout_margin="45dp"
-            android:id="@+id/btnSalir"
+            android:id="@+id/btnSal"
             style="?attr/materialButtonOutlinedStyle"/>
 
     </LinearLayout>
