@@ -29,6 +29,15 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        btnPuerta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity2.this,MenuActivity3.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         btnMulticontactos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
