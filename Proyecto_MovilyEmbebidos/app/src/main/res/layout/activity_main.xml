@@ -13,6 +13,16 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textColor="#FBCB0A"
+            android:text="BIENVENIDO"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
@@ -22,14 +32,12 @@
             app:lottie_rawRes="@raw/splahs"/>
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#FBCB0A"
-            android:text="BIENVENIDO AL SISTEMA"
-            android:textSize="36sp"
+            android:text="Cargando Acceso Al Sistema..."
+            android:textSize="26sp"
             android:textStyle="bold" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

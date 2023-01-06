@@ -16,6 +16,13 @@
             android:layout_margin="5dp"
             ></TextView>
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/splahs"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,17 +33,13 @@
             android:layout_margin="5dp"
             ></TextView>
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="146dp"
-            app:srcCompat="@drawable/icon_user" />
 
         <Button
             android:id="@+id/btnPuerta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
+            android:fontFamily="sans-serif-black"
             android:background="@drawable/bordes_redondos"
             android:drawableRight="@drawable/access"
             android:text="Acceso a Oficina"
@@ -46,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
             android:background="@drawable/bordes_redondos"
             android:drawableLeft="@drawable/luz"
             android:text="Control de luces"
@@ -57,6 +61,7 @@
             android:textSize="20sp"
             android:drawableRight="@drawable/on"
             android:text="Control de Multi-contactos"
+            android:fontFamily="sans-serif-black"
             android:layout_margin="30dp"
             android:background="@drawable/bordes_redondos"
             android:id="@+id/btnMulticontactos"/>
