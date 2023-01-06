@@ -21,7 +21,7 @@
             android:layout_height="156dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/splahs"/>
+            app:lottie_rawRes="@raw/pantamenu"/>
 
         <TextView
             android:layout_width="match_parent"
