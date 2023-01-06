@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
     <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:background="@color/black"
         android:orientation="vertical">
 
         <TextView
@@ -13,6 +14,7 @@
             android:fontFamily="monospace"
             android:textSize="25dp"
             android:gravity="center"
+            android:textColor="#FBCB0A"
             android:layout_margin="5dp"
             ></TextView>
 
@@ -30,6 +32,7 @@
             android:fontFamily="sans-serif-black"
             android:textSize="20dp"
             android:gravity="center"
+            android:textColor="#FBCB0A"
             android:layout_margin="5dp"
             ></TextView>
 
