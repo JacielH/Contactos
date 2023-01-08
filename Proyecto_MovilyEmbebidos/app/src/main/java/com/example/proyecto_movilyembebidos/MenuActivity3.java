@@ -60,7 +60,13 @@ public class MenuActivity3 extends AppCompatActivity {
             }
         });
     }
-    
+    private void showNotification(){
+        NotificationChannel channel = new NotificationChannel(CHANNEL_ID,
+                "NEW", NotificationManager.IMPORTANCE_DEFAULT);
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        manager.createNotificationChannel(channel);
+        showNewNotification();
+    }
     private void showNotify(){
         NotificationChannel channel = new NotificationChannel(CHANNEL_I,
                 "NEW", NotificationManager.IMPORTANCE_DEFAULT);
